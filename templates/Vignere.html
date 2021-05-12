@@ -53,7 +53,7 @@
         <h1 style="margin:10px 40px 10px 40px; text-align: center;" class="display-5">What is Vignere Cipher? </h1>
         <p class="text">Vignere cipher needs Plaintext/Ciphertext and One Key. But in this Cipher the Key will be repeated throught plaintext.</p>
         <p class="text">So if key is 'abc' and plaintext is like 'heythere' then the key stream will be like {a,b,c,a,b,c,a,b}. </p>
-        <p class="text"> To convert plaintext into ciphertext we just have to add character stream and key stream and take modulus by 26. for example, if we have key 'abc' and plaintext 'hey there' then the key stream is {1,2,3,1,2,3,1,2} and plaintext stream is {7,4,24,19,7,4,17,4}. so the ciphertext = 'hfa ujesg'.</p>
+        <p class="text"> To convert plaintext into ciphertext we just have to add character stream and key stream and take modulus by 26. for example, if we have key 'abc' and plaintext 'hey there' then the key stream is {0,1,2,0,1,2,0,1} and plaintext stream is {7,4,24,19,7,4,17,4}. so the ciphertext = 'hfa ujesg'.</p>
         <p class="text text-center" style="background-color: #696969; margin-left: 500px;margin-right: 500px;color:black;">E<sub>n</sub>(X)=(X<sub>n</sub>+key<sub>n</sub>) mod 26</p> 
         <p class="text">To convert ciphertext into plaintext we just have to substraction Ciphertext stream and key stream and take modulus by 26. for example, if we have key 'abc' and ciphertext character 'hfa ujesg' then the Plaintext will be 'hey there'</p> 
         <p class="text text-center" style="background-color: #696969; margin-left: 500px;margin-right: 500px;color:black;">E<sub>n</sub>(X)=(X<sub>n</sub>-key<sub>n</sub>) mod 26</p> 
@@ -72,8 +72,8 @@
             </div>
             <br>
             <br>
-            <input class="button" type="submit" name="decrypt" value="decrypt">
-            <input class="button" type="submit" name="encrypt" value="encrypt">
+            <input class="button" type="submit" name="decrypt" value="encrypt">
+            <input class="button" type="submit" name="encrypt" value="decrypt">
             <br>
             <br>
         </form>
